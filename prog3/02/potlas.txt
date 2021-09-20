@@ -26,7 +26,13 @@ q3.ToConsole("Q3");
 // Q4
 //var q4 = from person in people
 //         group person by person.Dept into g
-//         let count = g.Count()
-//         orderby count descending
-//         select new { Dept = g.Key, Num = count};
+//         select new { Dept = g.Key, Cnt = g.Count() };
 //q4.ToConsole("Q4");
+
+// Q5
+//var oneDept = q4.OrderByDescending(rec => rec.Cnt).FirstOrDefault();
+//var oneDept_alter = q4.Aggregate((i, j) => i.Cnt > j.Cnt ? i : j);
+//Console.WriteLine(oneDept.ToString());
+//Console.WriteLine(oneDept_alter.ToString());
+//Console.ReadLine();
+//Console.ReadLine();
