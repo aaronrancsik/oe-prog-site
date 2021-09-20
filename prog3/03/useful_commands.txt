@@ -1,3 +1,9 @@
+// Nuget EF csomagok
+Microsoft.EntityFrameworkCore.Sql
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.Proxies
+
+
 // SQL-first C# entity generálás
 Scaffold-DbContext "CONNECTION_STRING" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
@@ -5,4 +11,4 @@ Scaffold-DbContext "CONNECTION_STRING" Microsoft.EntityFrameworkCore.SqlServer -
 |DataDirectory|
 
 // Connection string több lekérdezés egyszerre
-MultipleActiveResultSets = true
+MultipleActiveResultSets=true
