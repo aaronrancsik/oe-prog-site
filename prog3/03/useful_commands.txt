@@ -1,0 +1,8 @@
+// SQL-first C# entity generálás
+Scaffold-DbContext "CONNECTION_STRING" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+// Connection string relatív útvonal
+|DataDirectory|
+
+// Connection string több lekérdezés egyszerre
+MultipleActiveResultSets = true
