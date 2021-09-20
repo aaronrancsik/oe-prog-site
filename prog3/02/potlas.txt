@@ -1,0 +1,32 @@
+// Q2
+string dept = "Alkalmazott Informatikai Intézet";
+int num = people.Count(x => x.Dept == dept);
+int current = 0;
+int pagesize = 10;
+while(current < num)
+{
+ var q2 = people
+     .Where(x => x.Dept == dept)
+     .Skip(current)
+     .Take(pagesize)
+     .Select(person => person.Name);
+ q2.ToConsole($"Q2 #{current/pagesize+1}");
+ current += pagesize;
+}
+
+// Q3
+var q3 = from person in people
+      let minlen = people.Min(x => x.Name.Length)
+      let maxlen = people.Max(x => x.Name.Length)
+      where person.Name.Length == minlen ||
+      person.Name.Length == maxlen
+      select new { person.Name, person.Name.Length };
+q3.ToConsole("Q3");
+
+// Q4
+//var q4 = from person in people
+//         group person by person.Dept into g
+//         let count = g.Count()
+//         orderby count descending
+//         select new { Dept = g.Key, Num = count};
+//q4.ToConsole("Q4");
