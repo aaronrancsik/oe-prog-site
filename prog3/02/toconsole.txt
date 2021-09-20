@@ -5,6 +5,5 @@ static class Operations
        Console.WriteLine($"************* {header} ************");
        foreach (var item in input) Console.WriteLine(item);
        Console.WriteLine($"************* {header} ************");
-       Console.ReadLine();
    }
 }

@@ -10,8 +10,8 @@ Car bmw4 = new Car() { Id = 4, BrandId = bmw.Id, BasePrice = 900000, Model = "BM
 Car citroen1 = new Car() { Id = 5, BrandId = citroen.Id, BasePrice = 10000, Model = "Citroen C1" };
 Car citroen2 = new Car() { Id = 6, BrandId = citroen.Id, BasePrice = 15000, Model = "Citroen C3" };
 Car citroen3 = new Car() { Id = 7, BrandId = citroen.Id, BasePrice = 65000, Model = "Citroen DS" };
-Car audi1 = new Car() { Id = 5, BrandId = audi.Id, BasePrice = 20000, Model = "Audi A3" };
-Car audi2 = new Car() { Id = 6, BrandId = audi.Id, BasePrice = 25000, Model = "Audi A4" };
+Car audi1 = new Car() { Id = 8, BrandId = audi.Id, BasePrice = 20000, Model = "Audi A3" };
+Car audi2 = new Car() { Id = 9, BrandId = audi.Id, BasePrice = 25000, Model = "Audi A4" };
 
 // modelBuilder.Entity<Brand>().HasData(bmw, citroen, audi);
-// modelBuilder.Entity<Car>().HasData(bmw1, bmw2, citroen1, citroen2, audi1, audi2);
+// modelBuilder.Entity<Car>().HasData(bmw1, bmw2, , bmw3, bmw4, citroen1, citroen2, citroen3, audi1, audi2);
