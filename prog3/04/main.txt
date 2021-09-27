@@ -1,0 +1,28 @@
+class Person
+{
+    //[MaxLength(20)]
+    public string Name { get; set; }
+    //[Range(40, 250)]
+    public int Height { get; set; }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        Person validPerson = new Person(){
+            Name = "Valid Pista",
+            Height = 190 };
+        Person invalidPerson = new Person(){
+            Name = "2121211212112121211212121",
+            Height = 190 };
+        Person invalidPerson2 = new Person(){
+            Name = "Valid Pista",
+            Height = 22 };
+
+        //Validator validator = new Validator();
+        //Console.WriteLine($"1st person: {validator.Validate(validPerson)}");
+        //Console.WriteLine($"2nd person: {validator.Validate(invalidPerson)}");
+        //Console.WriteLine($"3rd person: {validator.Validate(invalidPerson2)}");
+        //Console.ReadLine();
+    }
+}
