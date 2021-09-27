@@ -1,0 +1,21 @@
+internal class RangeValidation : IValidation
+{
+    RangeAttribute range;
+    public RangeValidation(RangeAttribute range)
+    {
+        this.range = range;
+    }
+
+    public bool Validate(object instance, PropertyInfo propertyInfo)
+    {
+        if(propertyInfo.PropertyType == typeof(int))
+        {
+            var value = (int)propertyInfo.GetValue(instance);
+            return value >= range.Min && value <= range.Max;
+        }
+        else
+        {
+            throw new InvalidOperationException();
+        }
+    }
+}
