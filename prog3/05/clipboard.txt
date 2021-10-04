@@ -1,0 +1,11 @@
+var menu = new ConsoleMenu().
+	Add("Using Linq", () => AveragesUsingLinq(ctx)).
+	Add("Using Logic", () => AveragesUsingLogic(logic)).
+	Add("Close", ConsoleMenu.Close);
+menu.Show();
+
+private static void AveragesUsingLogic(CarLogic logic)
+{
+	foreach (var item in logic.GetBrandAverages()) Console.WriteLine(item);
+	Console.ReadLine();
+}
