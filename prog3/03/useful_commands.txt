@@ -1,5 +1,5 @@
 // Nuget EF csomagok
-Microsoft.EntityFrameworkCore.Sql
+Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
 Microsoft.EntityFrameworkCore.Proxies
 

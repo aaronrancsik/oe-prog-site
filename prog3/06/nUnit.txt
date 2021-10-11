@@ -1,0 +1,4 @@
+// NuGet packages for NUnit:
+NUnit
+NUnit3TestAdapter
+Microsoft.NET.Test.Sdk
